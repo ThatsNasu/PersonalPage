@@ -1,3 +1,1 @@
-<?php
-    phpinfo();
-?>
+Sorry, nothing to see here so far. Please stay tuned for feature updates.
