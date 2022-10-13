@@ -1,1 +1,61 @@
-Sorry, nothing to see here so far. Please stay tuned for feature updates.
+<?php
+	require_once('backend/Helpers.php');
+?>
+
+<!DOCTYPE="html">
+<html>
+	<head>
+		<title>
+			<?php
+				$url = HELPERS::getUrl();
+				if(sizeof($url) > 0) {
+					echo 'ThatsNasu - '.$url[sizeof($url)-1];
+				} else {
+					echo 'ThatsNasu';
+					$url[0] = 'Home';
+				}
+			?>
+		</title>
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/materialicons/v85/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2" type="font/woff2" crossorigin>
+		<link rel="stylesheet" href="/style/global.css" media="screen">
+		<link rel="stylesheet" href="/style/theme.css" media="screen">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap'" crossorigin>
+	</head>
+	<?php
+		if(isset($_GET['debug'])) {
+	?>
+	<body>
+		<header>
+			<span>
+				ThatsNasu
+			</span>
+			<nav>
+				<?php
+					require_once('frames/Navigation.php');
+				?>
+			</nav>
+		</header>
+		<content>
+			<?php
+				if(file_exists('pages/'.$url[0].'.php')) {
+					require_once('pages/'.$url[0].'.php');
+				} elseif(file_exists('pages/'.$url[0].'.html')) {
+					require_once('pages/'.$url[0].'.html');
+				} else {
+					require_once('pages/404.html');
+				}
+			?>
+		</content>
+		<footer>
+			<?php
+				require_once('frames/Footer.php');
+			?>
+		</footer>
+	</body>
+	<?php
+		} else {
+			echo 'Sorry, nothing to see here so far. Please stay tuned for future updates.';
+		}
+	?>
+</html>
