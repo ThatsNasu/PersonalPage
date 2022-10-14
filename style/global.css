@@ -1,0 +1,114 @@
+/*----------------------------------------
+		Global definitions
+----------------------------------------*/
+:root {
+	--font-family-default: Comfortaa;
+	--font-size-default: 12px;
+	--font-weight-default: normal;
+	--font-family-headline: var(--font-family-default);
+	--font-size-headline: 15px;
+	--font-weight-headline: bolder;
+	--font-family-topic: var(--font-family-default);
+	--font-size-topic: 13px;
+	--font-weight-topic: bold;
+}
+
+* {
+	margin: 0px;
+	color: var(--color-text-primary);
+}
+
+/*----------------------------------------
+		Tag definitions
+----------------------------------------*/
+a {
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	transition: 0.3s;
+}
+
+body {
+	background-color: var(--color-background-primary);
+	font-family: var(--font-family-default);
+	min-width: 1400px;
+	width: 1400px;
+}
+
+header {
+	height: 75px;
+}
+
+nav {
+	height: 25px;
+}
+
+nav > a {
+	display: inline-block;
+}
+
+section {
+	padding: 5px;
+}
+
+section > span {
+	padding-left: 5px;
+	font-size: var(--font-size-headline);
+	font-weight: var(--font-weight-headline);
+}
+
+section > div {
+	padding-left: 10px;
+}
+
+footer {
+	max-height: 300px;
+}
+
+/*----------------------------------------
+		Class definitions
+----------------------------------------*/
+.content {
+	max-height: 80%;
+}
+
+.blog-preview-section {
+	max-height: 250px;
+}
+
+.blog-preview-topic {
+	font-size: var(--font-size-topic);
+	font-weight: var(--font-weight-topic);
+}
+
+.creations-main-section {
+	max-height: 250px;
+}
+
+.documentation-main-section {
+	max-height: 250px;
+}
+
+.tutorial-main-section {
+	max-height: 250px;
+}
+
+.tutorial-preview-section {
+	max-height: 250px;
+}
+
+.tutorial-preview-topic {
+	font-size: var(--font-size-topic);
+	font-weight: var(--font-weight-topic);
+}
+
+/*----------------------------------------
+		ID definitions
+----------------------------------------*/

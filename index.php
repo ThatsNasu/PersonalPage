@@ -16,11 +16,10 @@
 				}
 			?>
 		</title>
-		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/materialicons/v85/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2" type="font/woff2" crossorigin>
-		<link rel="stylesheet" href="/style/global.css" media="screen">
-		<link rel="stylesheet" href="/style/theme.css" media="screen">
+		<?php if(isset($_GET['debug'])) echo '<link rel="stylesheet" href="/style/global.css" media="screen">'; ?>
+		<?php if(isset($_GET['debug'])) echo '<link rel="stylesheet" href="/style/theme.css" media="screen">'; ?>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-		<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap'" crossorigin>
+		<link rel="preload" as="style" onload="this.onload=null; this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap'" crossorigin>
 	</head>
 	<?php
 		if(isset($_GET['debug'])) {
@@ -30,13 +29,13 @@
 			<span>
 				ThatsNasu
 			</span>
-			<nav>
-				<?php
-					require_once('frames/Navigation.php');
-				?>
-			</nav>
 		</header>
-		<content>
+		<nav>
+			<?php
+				require_once('frames/Navigation.php');
+			?>
+		</nav>
+		<div class="content">
 			<?php
 				if(file_exists('pages/'.$url[0].'.php')) {
 					require_once('pages/'.$url[0].'.php');
@@ -46,7 +45,7 @@
 					require_once('pages/404.html');
 				}
 			?>
-		</content>
+		</div>
 		<footer>
 			<?php
 				require_once('frames/Footer.php');
