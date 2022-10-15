@@ -57,9 +57,6 @@ a:hover {
 
 body {
 	background-color: var(--color-background-primary);
-	min-width: 1400px;
-	width: 1400px;
-	margin: 0px auto;
 }
 
 header {
@@ -80,6 +77,8 @@ nav {
 	height: 25px;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	background-color: var(--color-background-secondary);
 	font-family: var(--font-family-navigation);
 	font-size: var(--font-size-navigation);
 	font-weight: var(--font-weight-navigation);
@@ -89,17 +88,15 @@ nav > a {
 	display: inline-block;
 }
 
-content {
-	max-height: 80%;
-}
-
 section {
 	padding: 5px;
-	padding-top: 15px;
+	padding-top: 20px;
 }
 
 section > span {
 	padding-left: 5px;
+	display: block;
+	text-align: center;
 	font-size: var(--font-size-headline);
 	font-weight: var(--font-weight-headline);
 	font-variant: small-caps;
@@ -112,11 +109,20 @@ section > div {
 
 footer {
 	max-height: 300px;
+	width: 100%;
+	background-color: var(--color-background-secondary);
 }
 
 /*----------------------------------------
 		Class definitions
 ----------------------------------------*/
+.content {
+	max-height: 80%;
+	max-width: 1400px;
+	width: 1400px;
+	margin: 0px auto;
+}
+
 .blog-preview-section {
 	max-height: 250px;
 }
@@ -126,12 +132,24 @@ footer {
 	font-weight: var(--font-weight-topic);
 }
 
+.blog-preview-chapter {
+	padding-top: 5px;
+}
+
 .creations-main-section {
 	max-height: 250px;
 }
 
+.creations-preview-summary {
+	padding-top: 5px;
+}
+
 .documentation-main-section {
 	max-height: 250px;
+}
+
+.documentation-preview-summary {
+	padding-top: 5px;
 }
 
 .tutorial-main-section {
@@ -146,11 +164,16 @@ footer {
 
 .tutorial-preview-section {
 	max-height: 250px;
+	padding-top: 15px;
 }
 
 .tutorial-preview-topic {
 	font-size: var(--font-size-topic);
 	font-weight: var(--font-weight-topic);
+}
+
+.tutorial-preview-chapter {
+	padding-top: 5px;
 }
 
 /*----------------------------------------
