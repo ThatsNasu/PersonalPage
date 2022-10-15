@@ -2,27 +2,47 @@
 		Global definitions
 ----------------------------------------*/
 :root {
+	--font-family-category: var(--font-family-default);
+	--font-size-category: 14pt;
+	--font-weight-category: bolder;
+
 	--font-family-default: Comfortaa;
-	--font-size-default: 12px;
+	--font-size-default: 12pt;
 	--font-weight-default: normal;
+
+	--font-family-header: var(--font-family-default);
+	--font-size-header: 17pt;
+	--font-weight-header: bold;
+
 	--font-family-headline: var(--font-family-default);
-	--font-size-headline: 15px;
+	--font-size-headline: 14pt;
 	--font-weight-headline: bolder;
+
+	--font-family-navigation: var(--font-family-default);
+	--font-size-navigation: 14pt;
+	--font-weight-navigation: bolder;
+
 	--font-family-topic: var(--font-family-default);
-	--font-size-topic: 13px;
+	--font-size-topic: 13pt;
 	--font-weight-topic: bold;
 }
 
 * {
 	margin: 0px;
 	color: var(--color-text-primary);
+	font-family: var(--font-family-default);
+	font-size: var(--font-size-default);
+	font-weight: var(--font-weight-default);
 }
 
 /*----------------------------------------
 		Tag definitions
 ----------------------------------------*/
 a {
+	padding-left: 20px;
+	padding-right: 20px;
 	text-decoration: none;
+	border-bottom: none;
 	transition: 0.3s;
 }
 
@@ -31,41 +51,63 @@ a:visited {
 }
 
 a:hover {
-	text-decoration: underline;
+	border-bottom: 1px solid var(--color-accents-primary);
 	transition: 0.3s;
 }
 
 body {
 	background-color: var(--color-background-primary);
-	font-family: var(--font-family-default);
 	min-width: 1400px;
 	width: 1400px;
+	margin: 0px auto;
 }
 
 header {
 	height: 75px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+header > span {
+	font-variant: small-caps;
+	font-family: var(--font-family-header);
+	font-size: var(--font-size-header);
+	font-weight: var(--font-weight-header);
 }
 
 nav {
 	height: 25px;
+	display: flex;
+	justify-content: center;
+	font-family: var(--font-family-navigation);
+	font-size: var(--font-size-navigation);
+	font-weight: var(--font-weight-navigation);
 }
 
 nav > a {
 	display: inline-block;
 }
 
+content {
+	max-height: 80%;
+}
+
 section {
 	padding: 5px;
+	padding-top: 15px;
 }
 
 section > span {
 	padding-left: 5px;
 	font-size: var(--font-size-headline);
 	font-weight: var(--font-weight-headline);
+	font-variant: small-caps;
 }
 
 section > div {
 	padding-left: 10px;
+	padding-top: 15px;
 }
 
 footer {
@@ -75,10 +117,6 @@ footer {
 /*----------------------------------------
 		Class definitions
 ----------------------------------------*/
-.content {
-	max-height: 80%;
-}
-
 .blog-preview-section {
 	max-height: 250px;
 }
@@ -98,6 +136,12 @@ footer {
 
 .tutorial-main-section {
 	max-height: 250px;
+}
+
+.tutorial-main-category {
+	font-family: var(--font-family-category);
+	font-size: var(--font-size-category);
+	font-weight: var(--font-weight-category);
 }
 
 .tutorial-preview-section {

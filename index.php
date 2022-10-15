@@ -35,7 +35,7 @@
 				require_once('frames/Navigation.php');
 			?>
 		</nav>
-		<div class="content">
+		<content>
 			<?php
 				if(file_exists('pages/'.$url[0].'.php')) {
 					require_once('pages/'.$url[0].'.php');
@@ -45,7 +45,7 @@
 					require_once('pages/404.html');
 				}
 			?>
-		</div>
+		</content>
 		<footer>
 			<?php
 				require_once('frames/Footer.php');
