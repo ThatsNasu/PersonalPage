@@ -1,8 +1,8 @@
 <section>
 	<span>My Blog</span>
-	<div class="blog-preview-section">
-		<span class="blog-preview-topic">Some</span>
-		<div class="blog-preview-chapter">
+	<div>
+		<span>Some</span>
+		<div>
 			<?php
 				echo 'someday here will be useful content instead of a placeholder.'
 					/*
@@ -13,9 +13,9 @@
 			?>
 		</div>
 	</div>
-	<div class="blog-preview-section">
-		<span class="blog-preview-topic">Random</span>
-		<div class="blog-preview-chapter">
+	<div>
+		<span>Random</span>
+		<div>
 			<?php
 				echo 'someday here will be useful content instead of a placeholder.'
 					/*
@@ -26,9 +26,9 @@
 			?>
 		</div>
 	</div>
-	<div class="blog-preview-section">
-		<span class="blog-preview-topic">Example</span>
-		<div class="blog-preview-chapter">
+	<div>
+		<span>Example</span>
+		<div>
 			<?php
 				echo 'someday here will be useful content instead of a placeholder.'
 					/*
@@ -42,9 +42,9 @@
 </section>
 <section>
 	<span>Creations</span>
-	<div class="creations-main-section">
+	<div>
 		<span>Ansi</span>
-		<div class="creations-preview-summary">
+		<div>
 			<?php
 				echo 'someday here will be a useful summary instead of a placeholder.'
 					/*
@@ -55,9 +55,9 @@
 			?>
 		</div>
 	</div>
-	<div class="creations-main-section">
+	<div>
 		<span>Yaw CMS</span>
-		<div class="creations-preview-summary">
+		<div>
 			<?php
 				echo 'someday here will be a useful summary instead of a placeholder.'
 					/*
@@ -71,9 +71,9 @@
 </section>
 <section>
 	<span>Documentations</span>
-	<div class="documentation-main-section">
+	<div>
 		<span>Ansi</span>
-		<div class="documentation-preview-summary">
+		<div>
 			<?php
 				echo 'someday here will be a summary instead of a placeholder.'
 					/*
@@ -84,9 +84,9 @@
 			?>
 		</div>
 	</div>
-	<div class="dosumentation-main-section">
+	<div>
 		<span>Yaw CMS</span>
-		<div class="documentation-preview-summary">
+		<div>
 			<?php
 				echo 'someday here will be a summary instead of a placeholder.'
 					/*
@@ -100,11 +100,11 @@
 </section>
 <section>
 	<span>Tutorials</span>
-	<div class="tutorial-main-section">
-		<span class="tutorial-main-category">Java</span>
-		<div class="tutorial-preview-section">
-			<span class="tutorial-preview-topic">Welcome to Java!</span>
-			<div class="tutorial-preview-chapter">
+	<div>
+		<span>Java</span>
+		<div>
+			<span>Welcome to Java!</span>
+			<div>
 				<?php
 					echo 'someday here will be a summary of the content targeted in this chapter of the tutorial.'
 					/*
@@ -115,9 +115,9 @@
 				?>
 			</div>
 		</div>
-		<div class="tutorial-preview-section">
-			<span class="tutorial-preview-topic">Variables</span>
-			<div class="tutorial-preview-chapter">
+		<div>
+			<span>Variables</span>
+			<div>
 				<?php
 					echo 'someday here will be a summary of the content targeted in this chapter of the tutorial.'
 					/*
@@ -128,9 +128,9 @@
 				?>
 			</div>
 		</div>
-		<div class="tutorial-preview-section">
-			<span class="tutorial-preview-topic">Branching and Conditions</span>
-			<div class="tutorial-preview-chapter">
+		<div>
+			<span>Branching and Conditions</span>
+			<div>
 				<?php
 					echo 'someday here will be a summary of the content targeted in this chapter of the tutorial.'
 					/*
@@ -142,11 +142,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="tutorial-main-section">
-		<span class="tutorial-main-category">PHP</span>
-		<div class="tutorial-preview-section">
-			<span class="tutorial-preview-topic">Welcome to PHP!</span>
-			<div class="tutorial-preview-chapter">
+	<div>
+		<span>PHP</span>
+		<div>
+			<span>Welcome to PHP!</span>
+			<div>
 				<?php
 					echo 'someday here will be a summary of the content targeted in this chapter of the tutorial.'
 					/*
@@ -157,9 +157,9 @@
 				?>
 			</div>
 		</div>
-		<div class="tutorial-preview-section">
-			<span class="tutorial-preview-topic">Variables</span>
-			<div class="tutorial-preview-chapter">
+		<div>
+			<span>Variables</span>
+			<div>
 				<?php
 					echo 'someday here will be a summary of the content targeted in this chapter of the tutorial.'
 					/*
@@ -170,9 +170,9 @@
 				?>
 			</div>
 		</div>
-		<div class="tutorial-preview-section">
-			<span class="tutorial-preview-topic">Branching and Conditions</span>
-			<div class="tutorial-preview-chapter">
+		<div>
+			<span>Branching and Conditions</span>
+			<div>
 				<?php
 					echo 'someday here will be a summary of the content targeted in this chapter of the tutorial.'
 					/*

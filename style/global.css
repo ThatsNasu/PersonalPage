@@ -3,7 +3,7 @@
 ----------------------------------------*/
 :root {
 	--font-family-category: var(--font-family-default);
-	--font-size-category: 14pt;
+	--font-size-category: 13pt;
 	--font-weight-category: bolder;
 
 	--font-family-default: Comfortaa;
@@ -15,7 +15,7 @@
 	--font-weight-header: bold;
 
 	--font-family-headline: var(--font-family-default);
-	--font-size-headline: 14pt;
+	--font-size-headline: 15pt;
 	--font-weight-headline: bolder;
 
 	--font-family-navigation: var(--font-family-default);
@@ -23,7 +23,7 @@
 	--font-weight-navigation: bolder;
 
 	--font-family-topic: var(--font-family-default);
-	--font-size-topic: 13pt;
+	--font-size-topic: 14pt;
 	--font-weight-topic: bold;
 }
 
@@ -107,7 +107,27 @@ section > div {
 	padding-top: 15px;
 }
 
+section > div > span {
+	font-size: var(--font-size-topic);
+	font-weight: var(--font-weight-topic);
+}
+
+section > div > div {
+	padding-top: 15px;
+}
+
+section > div > div > span {
+	padding-top: 15px;
+	font-size: var(--font-size-category);
+	font-weight: var(--font-weight-category);
+}
+
+section > div > div > div {
+	padding-top: 5px;
+}
+
 footer {
+	margin-top: 25px;
 	max-height: 300px;
 	width: 100%;
 	background-color: var(--color-background-secondary);
@@ -121,59 +141,6 @@ footer {
 	max-width: 1400px;
 	width: 1400px;
 	margin: 0px auto;
-}
-
-.blog-preview-section {
-	max-height: 250px;
-}
-
-.blog-preview-topic {
-	font-size: var(--font-size-topic);
-	font-weight: var(--font-weight-topic);
-}
-
-.blog-preview-chapter {
-	padding-top: 5px;
-}
-
-.creations-main-section {
-	max-height: 250px;
-}
-
-.creations-preview-summary {
-	padding-top: 5px;
-}
-
-.documentation-main-section {
-	max-height: 250px;
-}
-
-.documentation-preview-summary {
-	padding-top: 5px;
-}
-
-.tutorial-main-section {
-	max-height: 250px;
-}
-
-.tutorial-main-category {
-	font-family: var(--font-family-category);
-	font-size: var(--font-size-category);
-	font-weight: var(--font-weight-category);
-}
-
-.tutorial-preview-section {
-	max-height: 250px;
-	padding-top: 15px;
-}
-
-.tutorial-preview-topic {
-	font-size: var(--font-size-topic);
-	font-weight: var(--font-weight-topic);
-}
-
-.tutorial-preview-chapter {
-	padding-top: 5px;
 }
 
 /*----------------------------------------
