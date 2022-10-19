@@ -1,7 +1,7 @@
 <section>
 	<span>My Blog</span>
 	<div>
-		<span>Some</span>
+		<span>Developing Ansi - A Journey through Escape Sequences</span>
 		<div>
 			<?php
 				echo 'someday here will be useful content instead of a placeholder.'
@@ -81,6 +81,13 @@
 						the use of a database for static content to reduce io, traffi and loadtimes. probably achieved using classes and methods
 						for holding the data in variables until i can think of a more elegant and efficient solution.
 					*/
+					/*
+						Possible Content:
+							Links to external ressources
+								Wiki on github
+								repo on maven central
+								javadoc on ansi.thatsnasu.dev
+					*/
 			?>
 		</div>
 	</div>
@@ -100,6 +107,48 @@
 </section>
 <section>
 	<span>Tutorials</span>
+	<div>
+		<span>Ansi</span>
+		<div>
+			<span>Welcome to Ansi Escape Sequences!</span>
+			<div>
+				<?php
+					echo 'someday here will be a summary of the content targeted in this chapter of the tutorial.'
+					/*
+						load summary content from the actual chapter file. Yes, i will build the chapters filebased, since i would love to drop
+						the use of a database for static content to reduce io, traffi and loadtimes. probably achieved using classes and methods
+						for holding the data in variables until i can think of a more elegant and efficient solution.
+					*/
+				?>
+			</div>
+			<div>
+				<span>Using the Ansi Library</span>
+				<div>
+					<?php
+					echo 'someday here will be a summary of the content targeted in this chapter of the tutorial.'
+					/*
+						load summary content from the actual chapter file. Yes, i will build the chapters filebased, since i would love to drop
+						the use of a database for static content to reduce io, traffi and loadtimes. probably achieved using classes and methods
+						for holding the data in variables until i can think of a more elegant and efficient solution.
+					*/
+				?>
+				</div>
+			</div>
+			<div>
+				<span>Expanding the Ansi Library</span>
+				<div>
+					<?php
+					echo 'someday here will be a summary of the content targeted in this chapter of the tutorial.'
+					/*
+						load summary content from the actual chapter file. Yes, i will build the chapters filebased, since i would love to drop
+						the use of a database for static content to reduce io, traffi and loadtimes. probably achieved using classes and methods
+						for holding the data in variables until i can think of a more elegant and efficient solution.
+					*/
+				?>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div>
 		<span>Java</span>
 		<div>
