@@ -121,31 +121,31 @@
 					*/
 				?>
 			</div>
+		</div>
+		<div>
+			<span>Using the Ansi Library</span>
 			<div>
-				<span>Using the Ansi Library</span>
-				<div>
-					<?php
-					echo 'someday here will be a summary of the content targeted in this chapter of the tutorial.'
-					/*
-						load summary content from the actual chapter file. Yes, i will build the chapters filebased, since i would love to drop
-						the use of a database for static content to reduce io, traffi and loadtimes. probably achieved using classes and methods
-						for holding the data in variables until i can think of a more elegant and efficient solution.
-					*/
-				?>
-				</div>
+				<?php
+				echo 'someday here will be a summary of the content targeted in this chapter of the tutorial.'
+				/*
+					load summary content from the actual chapter file. Yes, i will build the chapters filebased, since i would love to drop
+					the use of a database for static content to reduce io, traffi and loadtimes. probably achieved using classes and methods
+					for holding the data in variables until i can think of a more elegant and efficient solution.
+				*/
+			?>
 			</div>
+		</div>
+		<div>
+			<span>Expanding the Ansi Library</span>
 			<div>
-				<span>Expanding the Ansi Library</span>
-				<div>
-					<?php
-					echo 'someday here will be a summary of the content targeted in this chapter of the tutorial.'
-					/*
-						load summary content from the actual chapter file. Yes, i will build the chapters filebased, since i would love to drop
-						the use of a database for static content to reduce io, traffi and loadtimes. probably achieved using classes and methods
-						for holding the data in variables until i can think of a more elegant and efficient solution.
-					*/
-				?>
-				</div>
+				<?php
+				echo 'someday here will be a summary of the content targeted in this chapter of the tutorial.'
+				/*
+					load summary content from the actual chapter file. Yes, i will build the chapters filebased, since i would love to drop
+					the use of a database for static content to reduce io, traffi and loadtimes. probably achieved using classes and methods
+					for holding the data in variables until i can think of a more elegant and efficient solution.
+				*/
+			?>
 			</div>
 		</div>
 	</div>
