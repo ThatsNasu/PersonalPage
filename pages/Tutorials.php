@@ -1,26 +1,26 @@
 <section>
-	<span><a href="/Tutorials/Ansi?debug">Ansi</a></span>
+	<span><a href="/Tutorials/Ansi">Ansi</a></span>
 	<div>
-		<span><a href="/Tutorials/Ansi/Welcome?debug">Welcome to Ansi Escape Sequences!</a></span>
+		<span><a href="/Tutorials/Ansi/Welcome">Welcome to Ansi Escape Sequences!</a></span>
 		<div>
 
 		</div>
-		<span><a href="/Tutorials/Ansi/Using-Ansi?debug">Using the Ansi Library</a></span>
+		<span><a href="/Tutorials/Ansi/Using-Ansi">Using the Ansi Library</a></span>
 		<div>
 
 		</div>
-		<span><a href="/Tutorials/Ansi/Expanding-Ansi?debug">Expanding the Ansi Library</a></span>
+		<span><a href="/Tutorials/Ansi/Expanding-Ansi">Expanding the Ansi Library</a></span>
 		<div>
 
 		</div>
 	</div>
-	<span><a href="/Tutorials/OpenIRC?debug">OpenIRC</a></span>
+	<span><a href="/Tutorials/OpenIRC">OpenIRC</a></span>
 	<div>
-		<span><a href="/Tutorials/OpenIRC/Welcome?debug">Welcome to the IRC Protocol!</a></span>
+		<span><a href="/Tutorials/OpenIRC/Welcome">Welcome to the IRC Protocol!</a></span>
 		<div>
 
 		</div>
-		<span><a href="/Tutorials/OpenIRC/Using-OpenIRC?debug">Using the OpenIRC Library</a></span>
+		<span><a href="/Tutorials/OpenIRC/Using-OpenIRC">Using the OpenIRC Library</a></span>
 		<div>
 
 		</div>
@@ -29,47 +29,47 @@
 
 		</div>
 	</div>
-	<span><a href="/Tutorials/YawCMS?debug">YawCMS</a></span>
+	<span><a href="/Tutorials/YawCMS">YawCMS</a></span>
 	<div>
-		<span><a href="/Tutorials/YawCMS/Welcome?debug">Welcome to Yaw!</a></span>
+		<span><a href="/Tutorials/YawCMS/Welcome">Welcome to Yaw!</a></span>
 		<div>
 
 		</div>
-		<span><a href="/Tutorials/YawCMS/Using-OpenIRC?debug">Using the YawCMS</a></span>
+		<span><a href="/Tutorials/YawCMS/Using-YawCMS">Using the YawCMS</a></span>
 		<div>
 
 		</div>
-		<span><a href="/Tutorials/YawCMS/Expanding-OpenIRC">Expanding the YawCMS</a></span>
+		<span><a href="/Tutorials/YawCMS/Expanding-YawCMS">Expanding the YawCMS</a></span>
 		<div>
 
 		</div>
 	</div>
-	<span><a href="/Tutorials/Java?debug">Java</a></span>
+	<span><a href="/Tutorials/Java">Java</a></span>
 	<div>
-		<span><a href="/Tutorials/Java/Welcome?debug">Welcome To Java!</a></span>
+		<span><a href="/Tutorials/Java/Welcome">Welcome To Java!</a></span>
 		<div>
 		
 		</div>
-		<span><a href="/Tutorials/Java/Variables?debug">Variables</a></span>
+		<span><a href="/Tutorials/Java/Variables">Variables</a></span>
 		<div>
 		
 		</div>
-		<span><a href="/Tutorials/Java/Branching-and-Conditions?debug">Branching and Conditions</a></span>
+		<span><a href="/Tutorials/Java/Branching-and-Conditions">Branching and Conditions</a></span>
 		<div>
 		
 		</div>
 	</div>
-	<span><a href="/Tutorials/PHP?debug">PHP</a></span>
+	<span><a href="/Tutorials/PHP">PHP</a></span>
 	<div>
-		<span><a href="/Tutorials/PHP/Welcome?debug">Welcome to PHP!</a></span>
+		<span><a href="/Tutorials/PHP/Welcome">Welcome to PHP!</a></span>
 		<div>
 		
 		</div>
-		<span><a href="/Tutorials/PHP/Variables?debug">Variables</a></span>
+		<span><a href="/Tutorials/PHP/Variables">Variables</a></span>
 		<div>
 		
 		</div>
-		<span><a href="/Tutorials/PHP/Branching-and-Conditions?debug">Branching and Conditions</a></span>
+		<span><a href="/Tutorials/PHP/Branching-and-Conditions">Branching and Conditions</a></span>
 		<div>
 		
 		</div>

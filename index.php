@@ -16,14 +16,12 @@
 				}
 			?>
 		</title>
-		<?php if(isset($_GET['debug'])) echo '<link rel="stylesheet" href="/style/global.css" media="screen">'; ?>
-		<?php if(isset($_GET['debug'])) echo '<link rel="stylesheet" href="/style/theme.css" media="screen">'; ?>
+		<link rel="stylesheet" href="/style/global.css" media="screen">
+		<link rel="stylesheet" href="/style/theme.css" media="screen">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="preload" as="style" onload="this.onload=null; this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap'" crossorigin>
 	</head>
-	<?php
-		if(isset($_GET['debug'])) {
-	?>
+
 	<body>
 		<header>
 			<span>
@@ -56,9 +54,4 @@
 			?>
 		</footer>
 	</body>
-	<?php
-		} else {
-			echo 'Sorry, nothing to see here so far. Please stay tuned for future updates.';
-		}
-	?>
 </html>

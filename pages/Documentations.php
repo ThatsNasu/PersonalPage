@@ -1,13 +1,13 @@
 <section>
-	<span><a href="/Documentations/Ansi?debug">Ansi</a></span>
+	<span><a href="/Documentations/Ansi">Ansi</a></span>
 	<div>
 	
 	</div>
-	<span><a href="/Documentations/OpenIRC?debug">OpenIRC</a></span>
+	<span><a href="/Documentations/OpenIRC">OpenIRC</a></span>
 	<div>
 	
 	</div>
-	<span><a href="/Documentations/YawCMS?debug">YawCMS</a></span>
+	<span><a href="/Documentations/YawCMS">YawCMS</a></span>
 	<div>
 	
 	</div>
