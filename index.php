@@ -37,10 +37,14 @@
 		</nav>
 		<div class="content">
 			<?php
-				if(file_exists('pages/'.$url[0].'.php')) {
-					require_once('pages/'.$url[0].'.php');
-				} elseif(file_exists('pages/'.$url[0].'.html')) {
-					require_once('pages/'.$url[0].'.html');
+				$pathbuilder = 'pages';
+				foreach($url as $value) {
+					$pathbuilder .= '/'.$value;
+				}
+				if(file_exists($pathbuilder.'.php')) {
+					require_once($pathbuilder.'.php');
+				} elseif(file_exists($pathbuilder.'.html')) {
+					require_once($pathbuilder.'.html');
 				} else {
 					require_once('pages/404.html');
 				}

@@ -1,7 +1,7 @@
-<a href="/"><div class="footeritem">Home</div></a>
-<a href="/Blog"><div class="footeritem">Blog</div></a>
-<a href="/Creations"><div class="footeritem">Creations</div></a>
-<a href="/Documentations"><div class="footeritem">Documentations</div></a>
-<a href="/Tutorials"><div class="footeritem">Tutorials</div></a>
-<a href="/Myself"><div class="footeritem">About me</div></a>
-<a href="/Imprint"><div class="footeritem">Imprint</div></a>
+<a href="/?debug">Home</a>
+<a href="/Blog?debug">Blog</a>
+<a href="/Creations?debug">Creations</a>
+<a href="/Documentations?debug">Documentations</a>
+<a href="/Tutorials?debug">Tutorials</a>
+<a href="/Myself?debug">About me</a>
+<a href="/Imprint?debug">Imprint</a>
