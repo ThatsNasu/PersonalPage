@@ -1,6 +1,7 @@
 <script>
 	import '../app.pcss';
 	import '../typography.pcss';
+	import '@fontsource/comfortaa';
 	import { ModeWatcher } from 'mode-watcher';
 	import { Button } from '$lib/components/ui/button';
 	import { Sun, Moon } from 'radix-icons-svelte';
@@ -11,11 +12,11 @@
 
 <section
 	id="header"
-	class="border-neutral fixed top-0 flex w-full items-center justify-between gap-1 border-b p-2 px-4 z-50">
+	class="border-neutral fixed top-0 flex w-full items-center justify-between gap-1 border-b p-4 px-6 z-50">
 	<a href="/">ThatsNasu</a>
 	<nav class="flex items-center gap-1">
 		<Button variant="link" size="slim" href="/">Home</Button>
-		<Button variant="link" size="slim" href="/blog">Blog</Button>
+		<Button variant="link" size="slim" href="/devlog">Devlog</Button>
 		<Button
 			variant="ghost"
 			size="icon"
@@ -80,19 +81,19 @@
 
 <style lang="postcss">
 	:global(.dark #header) {
-		background-color: oklch(0 0 0 / 0.7) !important;
+		background-color: hsl(240 5% 10% / 0.7) !important;
 	}
 	#header {
-		background-color: oklch(100 0 0 / 0.2);
+		background-color: hsla(0, 0%, 100%, 0.5);
 		backdrop-filter: blur(5px);
 	}
 	main {
-		margin-top: 53px;
-		min-height: calc(100vh - 53px - 150px);
+		margin-top: 69px;
+		min-height: calc(100vh - 69px - 150px);
 	}
 	footer {
 		min-height: 150px;
-		background-color: hsl(20 5% 7%);
+		background-color: hsl(240 5% 18.9%);
 		> nav {
 			display: flex;
 			flex-direction: column;
