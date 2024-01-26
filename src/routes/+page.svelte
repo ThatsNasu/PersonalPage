@@ -18,7 +18,7 @@
                 </h1>
 				<p class="description mt-6">{post.description}</p>
                 <div class="flex justify-end">
-                    <Button variant="ghost" href={post.slug} class="text-accent-foreground">Read more</Button>
+                    <Button variant="ghost" href={post.slug} class="text-accent-foreground">Full post</Button>
                 </div>
             </div>
 		{/each}
