@@ -12,7 +12,7 @@
 
 <section
 	id="header"
-	class="border-neutral fixed top-0 flex w-full items-center justify-between gap-1 border-b p-4 px-6 z-50">
+	class="border-neutral fixed top-0 flex w-full items-center justify-between gap-1 border-b border-accent-foreground p-4 px-6 z-50">
 	<a href="/">ThatsNasu</a>
 	<nav class="flex items-center gap-1">
 		<Button variant="link" size="slim" href="/">Home</Button>
