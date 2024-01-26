@@ -63,13 +63,13 @@
 	</aside> 
 	<nav>
 		<header class="footer-title">Stuff I made</header>
-		<Button variant="link" size="link" class="justify-start" href="https://github.com/thatsnasu/Ansi">Ansi</Button>
-		<Button variant="link" size="link" class="justify-start" href="https://github.com/thatsnasu/OpenIRC">OpenIRC</Button>
+		<Button variant="link" size="link" class="justify-start" target="_blank" rel="noopener noreferer" href="https://github.com/thatsnasu/Ansi">Ansi</Button>
+		<Button variant="link" size="link" class="justify-start" target="_blank" rel="noopener noreferer" href="https://github.com/thatsnasu/OpenIRC">OpenIRC</Button>
 	</nav> 
 	<nav>
 		<header class="footer-title">See also</header>
-		<Button variant="link" size="link" class="justify-start" href="https://bitbite.dev">bitbite</Button>
-		<Button variant="link" size="link" class="justify-start" href="https://netcode.dev">netcode</Button>
+		<Button variant="link" size="link" class="justify-start" target="_blank" rel="noopener noreferer" href="https://bitbite.dev">bitbite</Button>
+		<Button variant="link" size="link" class="justify-start" target="_blank" rel="noopener noreferer" href="https://netcode.dev">netcode</Button>
 	</nav> 
 	<nav>
 		<header class="footer-title">Legal</header>

@@ -75,4 +75,15 @@
   body {
     @apply bg-background text-foreground;
   }
+  main a[target="_blank"]::after {
+    --icon-size: 14px;
+    @apply ml-2;
+    content: "";
+    mask-image: url("/icons/external-link.svg");
+    mask-size: var(--icon-size);
+    mask-repeat: no-repeat;
+    background-color: blue;
+    height: var(--icon-size);
+    width: var(--icon-size);
+  }
 }
