@@ -1,14 +1,16 @@
-import { json } from '@sveltejs/kit';
+import { json, type RequestEvent } from '@sveltejs/kit';
 import type { Post } from '$lib/types';
 
-async function getPosts() {
+async function getPosts({ params }: RequestEvent) {
 	let posts: Post[] = [];
 
 	const paths = import.meta.glob('/src/posts/*/*.md', { eager: true });
 
 	for (const path in paths) {
 		const file = paths[path];
-		const slug = path.split('/').at(-2)+"/"+path.split('/').at(-1)?.replace('.md', '');
+		const topic = path.split('/').at(-2);
+		if(topic !== params.topic) continue;
+		const slug = topic+"/"+path.split('/').at(-1)?.replace('.md', '');
 
 		if (file && typeof file === 'object' && 'metadata' in file && slug) {
 			const metadata = file.metadata as Omit<Post, 'slug'>;
@@ -24,7 +26,7 @@ async function getPosts() {
 	return posts;
 }
 
-export async function GET() {
-	const posts = await getPosts();
+export async function GET(request) {
+	const posts = await getPosts(request);
 	return json(posts);
 }
