@@ -3,13 +3,14 @@ import { error } from '@sveltejs/kit'
 
 export async function load({ params }) {
 	try {
-		const paths = await import.meta.glob(`/src/posts/openirc/1.md`, { eager: true });
+		const paths = await import.meta.glob(`/src/posts/*/*.md`, { eager: true });
 
 		for (const path in paths) {
 			const file = paths[path];
 			const topic = path.split('/').at(-2);
-			if(topic !== params.topic) continue;
-			const slug = topic+"/"+path.split('/').at(-1)?.replace('.md', '');
+			const post = path.split('/').at(-1)?.replace('.md', '');
+			if(topic !== params.topic || post !== params.post) continue;
+			const slug = topic+"/"+post;
 	
 			if (file && typeof file === 'object' && 'metadata' in file && 'default' in file && slug) {
 				const metadata = file.metadata as Omit<Post, 'slug'>;
@@ -22,4 +23,5 @@ export async function load({ params }) {
 	} catch (e) {
 		throw error(404, `Could not find post ${params.post}`)
 	}
+	error(404, `Could not find post ${params.post}`);
 }
