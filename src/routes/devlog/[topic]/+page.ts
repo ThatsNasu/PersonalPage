@@ -1,0 +1,8 @@
+import type { Post } from '$lib/types';
+import { error } from '@sveltejs/kit';
+
+export async function load({ fetch, params }) {
+	const response = await fetch(`/api/posts/${params.topic}`);
+	const posts: Post[] = await response.json();
+	return { posts };
+}

@@ -1,3 +1,0 @@
-why
-how
-problems

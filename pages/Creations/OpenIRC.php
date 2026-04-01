@@ -1,1 +1,0 @@
-some weird stuff regarding OpenIRC

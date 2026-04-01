@@ -1,1 +1,0 @@
-more shit about a language noone wants to learn
