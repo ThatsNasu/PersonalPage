@@ -2,7 +2,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import { formatDate } from '$lib/dateutils';
 
-	let { data } = $props();
+	const { data } = $props();
 </script>
 
 <!-- SEO -->

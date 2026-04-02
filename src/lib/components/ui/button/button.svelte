@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { Button as ButtonPrimitive } from 'bits-ui';
 	import { cn } from '$lib/utils';
-	import { buttonVariants } from '.';
+	import { buttonVariants, type Variant, type Size } from '.';
 
 	const {
-		class: className,
-		variant = 'default',
-		size = 'default',
+		class: className = undefined,
+		variant = 'default' as Variant,
+		size = 'default' as Size,
 		children,
 		...restProps
 	} = $props();

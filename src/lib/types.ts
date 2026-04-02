@@ -10,5 +10,5 @@ export type Post = {
 	date: string;
 	categories: string[];
 	published: boolean;
-	references: Reference[];
+	references: Record<string, string>;
 };

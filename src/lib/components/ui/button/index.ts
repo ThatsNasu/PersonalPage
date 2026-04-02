@@ -33,6 +33,7 @@ type Variant = VariantProps<typeof buttonVariants>['variant'];
 type Size = VariantProps<typeof buttonVariants>['size'];
 
 type Props = ButtonRootProps & {
+	class?: string;
 	variant?: Variant;
 	size?: Size;
 };
@@ -40,7 +41,8 @@ type Props = ButtonRootProps & {
 export {
 	Root,
 	type Props,
-	//
+	type Variant,
+	type Size,
 	Root as Button,
 	type Props as ButtonProps,
 	buttonVariants
