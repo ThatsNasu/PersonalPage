@@ -34,7 +34,7 @@ export default [
 			'prefer-const': 'warn',
 			'no-var': 'error',
 			'no-console': 'off',
-			'svelte/no-navigation-without-resolve': 'warn',
+			'svelte/no-navigation-without-resolve': 'off',
 			'svelte/require-each-key': 'error',
 			'@typescript-eslint/no-unused-expressions': 'error'
 		}
