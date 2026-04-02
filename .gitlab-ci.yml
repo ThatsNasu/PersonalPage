@@ -1,0 +1,69 @@
+image: node:24-alpine
+
+stages:
+  - lint
+  - test
+  - build
+  - package
+
+lint_code:
+  stage: lint
+  script:
+    - echo "Installing dependencies..."
+    - npm ci
+    - echo "Running lint..."
+    - npm run lint
+
+test_unit:
+  stage: test
+  script:
+    - echo "Installing dependencies..."
+    - npm ci
+    - echo "Running unit tests..."
+    - npm run check
+
+build_app:
+  stage: build
+  script:
+    - echo "Installing dependencies and building app..."
+    - npm ci
+    - npm run build
+    - APP_VERSION=$(node -p "require('./package.json').version")
+    - echo $APP_VERSION > version.txt
+
+  artifacts:
+    paths:
+      - build/
+      - package.json
+      - package-lock.json
+      - version.txt
+    expire_in: 1 day
+
+build_image:
+  stage: package
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: ['']
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+  needs:
+    - job: build_app
+      artifacts: true
+  script:
+    - echo "Verifying build artifacts..."
+    - |
+      if [ ! -f "version.txt" ] || [ ! -d "build" ]; then
+        echo "ERROR - Required artifacts 'version.txt' or 'build/' not found."
+        exit 1
+      fi
+    - echo "Configuring Kaniko..."
+    - mkdir -p /kaniko/.docker
+    - echo "{\"auths\":{\"${CI_REGISTRY}\":{\"auth\":\"$(printf "%s:%s" "${CI_REGISTRY_USER}" "${CI_REGISTRY_PASSWORD}" | base64 | tr -d '\n')\"}}}" > /kaniko/.docker/config.json
+    - APP_VERSION=$(cat version.txt)
+    - IMAGE_NAME_TAGGED="${CI_REGISTRY_IMAGE}:${APP_VERSION}"
+    - echo "Building and pushing image ${IMAGE_NAME_TAGGED}..."
+    - >-
+      /kaniko/executor
+      --context "${CI_PROJECT_DIR}"
+      --dockerfile "${CI_PROJECT_DIR}/Dockerfile"
+      --destination "${IMAGE_NAME_TAGGED}"

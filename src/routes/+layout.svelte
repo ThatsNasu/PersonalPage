@@ -1,6 +1,5 @@
 <script>
-	import '../app.pcss';
-	import '../typography.pcss';
+	import '../app.css';
 	import '@fontsource/comfortaa';
 	import { ModeWatcher } from 'mode-watcher';
 	import { Button } from '$lib/components/ui/button';
@@ -31,7 +30,20 @@
 			</svg>
 			<span class="sr-only">GitHub</span>
 		</Button>
-		<Button on:click={toggleMode} variant="ghost" size="icon">
+		<Button
+			variant="ghost"
+			size="icon"
+			href="https://gitlab.thatsnasu.dev/thatsnasu"
+			target="_blank"
+			rel="noopener noreferrer">
+			<svg viewBox="0 0 24 24" class="h-4 w-4">
+				<path
+					fill="currentColor"
+					d="M22.546 14.563l-2.987-9.19a.77.77 0 00-.733-.53.77.77 0 00-.733.53l-2.02 6.216H7.927L5.907 5.373a.77.77 0 00-.733-.53.77.77 0 00-.733.53l-2.987 9.19a1.54 1.54 0 00.56 1.723L12 23l9.986-6.714a1.54 1.54 0 00.56-1.723z"/>
+			</svg>
+			<span class="sr-only">GitLab</span>
+		</Button>
+		<Button onclick={toggleMode} variant="ghost" size="icon">
 			<Sun
 				class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
 			<Moon
@@ -79,7 +91,7 @@
 	</nav>
 </footer>
 
-<style lang="postcss">
+<style>
 	:global(.dark #header) {
 		background-color: hsl(240 5% 10% / 0.7) !important;
 	}
@@ -94,14 +106,14 @@
 	footer {
 		min-height: 150px;
 		background-color: hsl(240 5% 18.9%);
-		> nav {
-			display: flex;
-			flex-direction: column;
-			.footer-title {
-				font-weight: 600;
-				font-size: 1.2rem;
-				margin-bottom: 0.5rem;
-			}
-		}
+	}
+	footer > nav {
+		display: flex;
+		flex-direction: column;
+	}
+	footer > nav .footer-title {
+		font-weight: 600;
+		font-size: 1.2rem;
+		margin-bottom: 0.5rem;
 	}
 </style>
