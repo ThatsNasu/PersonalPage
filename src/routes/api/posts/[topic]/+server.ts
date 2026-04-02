@@ -9,8 +9,8 @@ async function getPosts({ params }: RequestEvent) {
 	for (const path in paths) {
 		const file = paths[path];
 		const topic = path.split('/').at(-2);
-		if(topic !== params.topic) continue;
-		const slug = topic+"/"+path.split('/').at(-1)?.replace('.md', '');
+		if (topic !== params.topic) continue;
+		const slug = topic + '/' + path.split('/').at(-1)?.replace('.md', '');
 
 		if (file && typeof file === 'object' && 'metadata' in file && slug) {
 			const metadata = file.metadata as Omit<Post, 'slug'>;
@@ -19,8 +19,8 @@ async function getPosts({ params }: RequestEvent) {
 		}
 	}
 
-	posts = posts.sort((first, second) =>
-    	new Date(second.date).getTime() - new Date(first.date).getTime()
+	posts = posts.sort(
+		(first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
 	);
 
 	return posts;

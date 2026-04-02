@@ -1,5 +1,5 @@
 import type { Post } from '$lib/types';
-import { error } from '@sveltejs/kit'
+import { error } from '@sveltejs/kit';
 
 export async function load({ params }) {
 	try {
@@ -9,19 +9,19 @@ export async function load({ params }) {
 			const file = paths[path];
 			const topic = path.split('/').at(-2);
 			const post = path.split('/').at(-1)?.replace('.md', '');
-			if(topic !== params.topic || post !== params.post) continue;
-			const slug = topic+"/"+post;
-	
+			if (topic !== params.topic || post !== params.post) continue;
+			const slug = topic + '/' + post;
+
 			if (file && typeof file === 'object' && 'metadata' in file && 'default' in file && slug) {
 				const metadata = file.metadata as Omit<Post, 'slug'>;
 				return {
 					meta: metadata,
 					content: file.default
-				}
+				};
 			}
 		}
 	} catch (e) {
-		throw error(404, `Could not find post ${params.post}`)
+		throw error(404, `Could not find post ${params.post}`);
 	}
 	error(404, `Could not find post ${params.post}`);
 }
