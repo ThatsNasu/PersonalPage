@@ -4,7 +4,6 @@ import svelte from 'eslint-plugin-svelte';
 import prettier from 'eslint-config-prettier';
 
 export default [
-	// Ignore build + generated files
 	{
 		ignores: ['node_modules', '.svelte-kit', 'build', 'dist', 'package', '*.md']
 	},
@@ -15,19 +14,20 @@ export default [
 		files: ['**/*.ts', '**/*.js', '**/*.svelte'],
 		languageOptions: {
 			ecmaVersion: 'latest',
-			sourceType: 'module'
+			sourceType: 'module',
+			parser: tseslint.ESLintParser,
+			parserOptions: {
+				project: './tsconfig.json',
+				extraFileExtensions: ['.svelte']
+			}
 		},
 		rules: {
-			'no-unused-vars': 'off',
-			'@typescript-eslint/no-unused-vars': [
-				'warn',
-				{
-					argsIgnorePattern: '^_'
-				}
-			],
-			'no-console': 'off',
 			'prefer-const': 'warn',
-			'no-var': 'error'
+			'no-var': 'error',
+			'no-console': 'off',
+			'svelte/no-navigation-without-resolve': 'warn',
+			'svelte/require-each-key': 'error',
+			'@typescript-eslint/no-unused-expressions': 'error'
 		}
 	},
 	prettier

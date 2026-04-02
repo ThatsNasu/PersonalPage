@@ -80,7 +80,7 @@
 			</svg>
 			<span class="sr-only">GitHub</span>
 		</Button>
-		<p>&copy; 2024 Hauke Motzkus</p>
+		<p>&copy; 2026 Hauke Motzkus</p>
 	</aside>
 	<nav>
 		<header class="footer-title">My Projects</header>
@@ -91,14 +91,6 @@
 			target="_blank"
 			rel="noopener noreferer"
 			href="https://github.com/thatsnasu/Ansi">Ansi</Button
-		>
-		<Button
-			variant="link"
-			size="link"
-			class="justify-start"
-			target="_blank"
-			rel="noopener noreferer"
-			href="https://github.com/thatsnasu/OpenIRC">OpenIRC</Button
 		>
 	</nav>
 	<nav>
