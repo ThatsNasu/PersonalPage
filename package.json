@@ -12,6 +12,7 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
+		"@eslint/js": "^10.0.1",
 		"@fontsource/comfortaa": "^5.2.8",
 		"@sveltejs/adapter-node": "^5.5.4",
 		"@sveltejs/kit": "^2.55.0",
