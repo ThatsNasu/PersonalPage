@@ -11,6 +11,7 @@ lint_code:
   script:
     - echo "Installing dependencies..."
     - npm ci
+    - npx svelte-kit sync
     - echo "Running lint..."
     - npm run lint
 

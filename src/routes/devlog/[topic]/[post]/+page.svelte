@@ -28,7 +28,7 @@
 		{#if data.meta.references}
 			<h3 class="text-muted-foreground mt-8">References:</h3>
 			<div class="mt-2 flex flex-col items-start">
-				{#each Object.keys(data.meta.references) as reference}
+				{#each Object.keys(data.meta.references) as reference (reference)}
 					<Button
 						variant="link"
 						size="link"
