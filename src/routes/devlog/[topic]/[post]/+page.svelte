@@ -22,7 +22,7 @@
 				<span class="surface-4 text-muted-foreground text-sm">&num;{category}</span>
 			{/each}
 		</div>
-		<div class="prose mt-4">
+		<div class="prose prose-neutral dark:prose-invert mt-4 max-w-none">
 			<data.content />
 		</div>
 		{#if data.meta.references}
