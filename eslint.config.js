@@ -5,7 +5,16 @@ import prettier from 'eslint-config-prettier';
 
 export default [
 	{
-		ignores: ['node_modules', '.svelte-kit', 'build', 'dist', 'package', '*.md']
+		ignores: [
+			'node_modules',
+			'.svelte-kit',
+			'build',
+			'dist',
+			'package',
+			'*.md',
+			'eslint.config.js',
+			'svelte.config.js'
+		]
 	},
 	js.configs.recommended,
 	...tseslint.configs.recommended,

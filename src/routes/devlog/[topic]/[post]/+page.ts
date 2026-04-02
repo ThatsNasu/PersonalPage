@@ -1,4 +1,5 @@
 import type { Post } from '$lib/types';
+import type { Component } from 'svelte';
 import { error } from '@sveltejs/kit';
 
 export async function load({ params }) {
@@ -16,12 +17,12 @@ export async function load({ params }) {
 				const metadata = file.metadata as Omit<Post, 'slug'>;
 				return {
 					meta: metadata,
-					content: file.default
+					content: file.default as Component
 				};
 			}
 		}
-	} catch (e) {
+	} catch {
 		throw error(404, `Could not find post ${params.post}`);
 	}
-	error(404, `Could not find post ${params.post}`);
+	throw error(404, `Could not find post ${params.post}`);
 }

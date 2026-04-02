@@ -2,7 +2,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import { formatDate } from '$lib/dateutils';
 
-	export let data;
+	let { data } = $props();
 </script>
 
 <!-- SEO -->
@@ -18,12 +18,12 @@
 			<p class="text-muted-foreground text-sm">Published at {formatDate(data.meta.date)}</p>
 		</hgroup>
 		<div class="mt-2 flex flex-wrap gap-2">
-			{#each data.meta.categories as category}
+			{#each data.meta.categories as category (category)}
 				<span class="surface-4 text-muted-foreground text-sm">&num;{category}</span>
 			{/each}
 		</div>
 		<div class="prose mt-4">
-			<svelte:component this={data.content} />
+			<data.content />
 		</div>
 		{#if data.meta.references}
 			<h3 class="text-muted-foreground mt-8">References:</h3>
