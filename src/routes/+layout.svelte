@@ -16,7 +16,7 @@
 	<a href="/">ThatsNasu</a>
 	<nav class="flex items-center gap-1">
 		<Button variant="link" size="slim" href="/">Home</Button>
-		<Button variant="link" size="slim" href="/devlog">Devlog</Button>
+		<Button variant="link" size="slim" href="/logbook">Logbook</Button>
 		<Button
 			variant="ghost"
 			size="icon"
@@ -91,6 +91,22 @@
 			target="_blank"
 			rel="noopener noreferer"
 			href="https://github.com/thatsnasu/Ansi">Ansi</Button
+		>
+		<Button
+			variant="link"
+			size="link"
+			class="justify-start"
+			target="_blank"
+			rel="noopener noreferer"
+			href="https://gitlab.thatsnasu.dev/cloudia/cloudia">Cloudia</Button
+		>
+		<Button
+			variant="link"
+			size="link"
+			class="justify-start"
+			target="_blank"
+			rel="noopener noreferer"
+			href="https://gitlab.thatsnasu.dev/airia/airia">Airia</Button
 		>
 	</nav>
 	<nav>
