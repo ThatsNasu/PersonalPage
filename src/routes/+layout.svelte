@@ -16,7 +16,7 @@
 	<a href="/">ThatsNasu</a>
 	<nav class="flex items-center gap-1">
 		<Button variant="link" size="slim" href="/">Home</Button>
-		<Button variant="link" size="slim" href="/devlog">Devlog</Button>
+		<Button variant="link" size="slim" href="/logbook">LogBook</Button>
 		<Button
 			variant="ghost"
 			size="icon"
