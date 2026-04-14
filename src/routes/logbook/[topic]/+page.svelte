@@ -13,12 +13,12 @@
 		{#each data.posts as post (post.slug)}
 			<div class="bg-muted rounded-xl p-8 shadow-xl">
 				<h1 class="flex justify-between">
-					<a href="/devlog/{post.slug}" class="title">{post.title}</a>
+					<a href="/logbook/{post.slug}" class="title">{post.title}</a>
 					<p class="text-muted-foreground text-sm">{formatDate(post.date)}</p>
 				</h1>
 				<p class="description mt-6">{post.description}</p>
 				<div class="flex justify-end">
-					<Button variant="ghost" href="/devlog/{post.slug}" class="text-accent-foreground"
+					<Button variant="ghost" href="/logbook/{post.slug}" class="text-accent-foreground"
 						>Full post</Button
 					>
 				</div>
