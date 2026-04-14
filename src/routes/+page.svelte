@@ -10,7 +10,7 @@
 </section>
 <section class="p-4">
 	<div class="mx-auto flex w-full max-w-[1200px] flex-col gap-2">
-		{#each data.posts as post (post.id)}
+		{#each data.posts as post (post.slug)}
 			<div class="bg-muted rounded-xl p-8 shadow-xl">
 				<h1 class="flex justify-between">
 					<a href="/devlog/{post.slug}" class="title">{post.title}</a>
