@@ -6,7 +6,7 @@
 </script>
 
 <section class="flex h-[5vh] min-h-[100px] w-full items-center justify-center">
-	<h1>Devlog</h1>
+	<h1>LogBook</h1>
 </section>
 <section class="p-4">
 	<div class="mx-auto flex w-full max-w-[1200px] flex-col gap-2">
