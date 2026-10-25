@@ -1,0 +1,21 @@
+# Route on the shared Gateway envoy-gateway-system/envoy, HTTPS listener of
+# the hostname. timeouts.request "0s": no cap on the total request duration,
+# as with ingress-nginx; the idle timeout is in backendtrafficpolicy.yaml.
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
+  name: personalpage
+  namespace: thatsnasu
+spec:
+  parentRefs:
+    - name: envoy
+      namespace: envoy-gateway-system
+      sectionName: https-thatsnasu
+  hostnames:
+    - thatsnasu.dev
+  rules:
+    - backendRefs:
+        - name: personalpage-service
+          port: 80
+      timeouts:
+        request: 0s
