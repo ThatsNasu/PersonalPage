@@ -10,6 +10,6 @@ spec:
       kind: Gateway
       namespace: envoy-gateway-system
   to:
-    - group: ""
+    - group: ''
       kind: Secret
       name: thatsnasu-tls
