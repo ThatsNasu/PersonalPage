@@ -1,0 +1,14 @@
+# Issued through the shared Gateway (HTTP-01 on its http listener). Same
+# secret name as under ingress-nginx, which the Gateway listener references.
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: thatsnasu-tls
+  namespace: thatsnasu
+spec:
+  secretName: thatsnasu-tls
+  dnsNames:
+    - thatsnasu.dev
+  issuerRef:
+    kind: ClusterIssuer
+    name: letsencrypt-prod-gateway

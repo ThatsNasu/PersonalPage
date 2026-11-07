@@ -1,0 +1,14 @@
+# streamIdleTimeout carries over the Ingress's idle timeout (900s).
+apiVersion: gateway.envoyproxy.io/v1alpha1
+kind: BackendTrafficPolicy
+metadata:
+  name: personalpage
+  namespace: thatsnasu
+spec:
+  targetRefs:
+    - group: gateway.networking.k8s.io
+      kind: HTTPRoute
+      name: personalpage
+  timeout:
+    http:
+      streamIdleTimeout: 900s
